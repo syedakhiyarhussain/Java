@@ -4,7 +4,7 @@ public class PairSum2 {
     public static boolean pairsum(ArrayList<Integer> list, int target){
         int BreakingPoint=-1;
         int n=list.size();
-        for(int i=0; i<n; i++){
+        for(int i=0; i<n-1; i++){
             if(list.get(i)>list.get(i+1)){
                 BreakingPoint=i;
                 break;
